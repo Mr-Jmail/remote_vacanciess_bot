@@ -14,7 +14,7 @@ bot.use(stage.middleware())
 bot.start(ctx => ctx.scene.enter("surveyScene"));
 
 bot.command("editMessage", ctx => {
-    if(![1386450473, 6806895472].includes(ctx.from.id)) return
+    if(![1386450473, 6806895472, 6760582697].includes(ctx.from.id)) return
     ctx.scene.enter("editMessageScene")
 })
 
